@@ -2,20 +2,20 @@
 
 class Program {
     static void Main(string[] args) {
-        int dayOfWeek, timeOfDay, breakfastSet = 5, weekendSet = 3, coffeeSet = 2;
+        int dayOfWeek, timeOfDay, breakfastSet = 5, weekendSet = 2, coffeeSet = 3;
         string menu = "";
 
         
             Console.Write("Enter day (1-7):");
-            dayOfWeek = int.Parse(Console.ReadLine());
+            dayOfWeek = int.Parse(Console.ReadLine()); //รับค่าวัน
 
             Console.Write("Enter time (8-18):");
-            timeOfDay = int.Parse(Console.ReadLine());
+            timeOfDay = int.Parse(Console.ReadLine()); //รับค่าเวลา
 
             while (menu != "End") {
 
                 Console.Write("Enter menu ('Breakfast Set', 'Weekend Set', 'Coffee'):");
-            menu = Console.ReadLine();
+            menu = Console.ReadLine(); // รับค่าเมนู
 
              switch (menu) {
                 case "Breakfast Set":
